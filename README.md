@@ -16,3 +16,28 @@ returned
 Any node can call `StopProcessing` and the `opts` will be returned immediately
 
 pipeline can load function modules from a list of dotted module strings
+
+
+```python
+
+from pipeline import Pipeline
+
+def A(**kwargs):
+    # ...
+    return kwargs
+
+
+def B(**kwargs):
+    # ...
+    return kwargs
+
+
+def C(**kwargs):
+    # ...
+    return kwargs
+
+
+p = Pipeline([A, B, C])
+print(p.process())
+
+```
