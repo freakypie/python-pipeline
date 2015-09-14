@@ -10,9 +10,9 @@ class Pipeline(object):
     """ processes nodes passing the results of one to the next """
 
     def __init__(self, nodes=None):
-        if not nodes:
-            nodes = []
-        self._nodes = nodes
+        self._nodes = []
+        if nodes:
+            self.load(nodes)
 
     def import_function(self, path):
         path, last = path.rsplit(".", 1)
