@@ -10,7 +10,7 @@ Then `pipeline`
 
     A(opts)  ->  B(opts)  ->  C(opts) -> opts
 
-Any changes A adds will be passed to B, and so on. Finally, the `opts` are
+Any changes `A` adds will be passed to `B` , and so on. Finally, the `opts` are
 returned
 
 Any node can call `StopProcessing` and the `opts` will be returned immediately

@@ -1,4 +1,4 @@
-from .main import Pipeline
+from .main import Pipeline, StopProcessing
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"

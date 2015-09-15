@@ -2,7 +2,7 @@ import os
 from setuptools import setup, find_packages
 
 setup(
-    name='pipeline',
+    name='processing-pipeline',
     version=__import__('pipeline').__version__,
     author='John Leith',
     author_email='leith.john@gmail.com',
